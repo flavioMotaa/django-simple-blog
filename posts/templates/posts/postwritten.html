@@ -3,6 +3,7 @@
 
 {% block content %}
     <h1>{{post.title}}</h1>
+    <small>Tópico: {{post.topic}}</small>
     <p>Criado em {{post.created_at}}</p>
     <p>Atualizado em {{post.updated_at}}</p>
     <h2 style="overflow: hidden;">{{post.description}}</h2>
