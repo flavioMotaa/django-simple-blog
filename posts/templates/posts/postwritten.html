@@ -3,6 +3,8 @@
 
 {% block content %}
     <h1>{{post.title}}</h1>
+    <p>Criado em {{post.created_at}}</p>
+    <p>Atualizado em {{post.updated_at}}</p>
     <h2 style="overflow: hidden;">{{post.description}}</h2>
     <a href="/editpost/{{id}}" class="btn btn-sucess btn-outline-primary">Edit Post</a>
     <a href="/" class="btn btn-sucess btn-outline-secondary">Main page</a>
