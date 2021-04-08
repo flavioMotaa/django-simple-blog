@@ -1,7 +1,7 @@
 # Simple Blog 
 
 # I Still working in CSS and adding some funcionalities
-## Welcome, this is my frist project on web development, i hope you enjoy
+### Welcome, this is my frist project on web development, i hope you enjoy
 
 # Tools used in this project
 <ul>
