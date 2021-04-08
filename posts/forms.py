@@ -4,4 +4,4 @@ class WritePost(forms.ModelForm):
 
     class Meta():
         model = Post
-        fields = ('title', 'description')
+        fields = ('topic','title', 'description')
