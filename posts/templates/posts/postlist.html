@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+<a href="writepost/">Crie seu Post aqui</a>
+{% block content %}
+    {% for post in posts%}
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/postescrito/{{post.id}}" class="btn btn-sucess">{{post.title}}</a></li>
+        </ul>
+    {% endfor %}
+{% endblock %}

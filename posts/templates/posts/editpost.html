@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <h1>{{task.title}}</h1>
+    <form method="POST">
+        {% csrf_token %}<!--CSRF Token é como o nome diz, um token para manter a privacidade do Usuário, nenhum projeto no framework funciona sem ele-->
+        {{form.as_p}}
+        <input type="submit" class="btn btn-sucess" value="Editar Tarefa">
+    </form>
+</div>
+{% endblock %}

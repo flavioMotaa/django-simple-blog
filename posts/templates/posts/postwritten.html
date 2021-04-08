@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}<h1>{{post.title}}</h1>{% endblock %}
+
+{% block content %}
+    <h1>{{post.title}}</h1>
+    <h2 style="overflow: hidden;">{{post.description}}</h2>
+    <a href="/editpost/{{id}}" class="btn btn-sucess btn-outline-primary">Edit Post</a>
+    <a href="/" class="btn btn-sucess btn-outline-secondary">Main page</a>
+    <a href="/deletepost/{{id}}" class="btn btn-danger btn-outline-secondary">Delete this post</a>
+{% endblock %}
