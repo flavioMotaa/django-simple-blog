@@ -18,6 +18,6 @@
     <li>First, clone the repository and open it in your PC
     <li>Second, open it in your prefered editor(i use visual studio code, you decide)
     <li>After it, open terminal and write <br> python ./manage.py makemigrations posts <br> python ./manage.py migrate
-    <li>Then, <br>python ./manage.py runserver
+    <li>Then, <br>python ./manage.py runserver <br>
     Open your browser and type the port you received in the last command
 </ul>
