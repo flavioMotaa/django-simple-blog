@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import WritePost
-from django.views.generic import ListView
 
 # Create your views here.
 def PostList(request):
@@ -32,9 +31,9 @@ def editPost(request, id):
             post.save()
             return redirect('/')
         else:
-            return render(request, 'posts/editpost.html', {'form': form, 'task': post})
+            return render(request, 'posts/editpost.html', {'form': form, 'post': post})
     else:
-        return render(request, 'posts/editpost.html', {'form': form,'task': post})
+        return render(request, 'posts/editpost.html', {'form': form,'post': post})
 
 def deletePost(request, id):
     post = get_object_or_404(Post, pk=id)
