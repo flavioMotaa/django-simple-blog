@@ -8,7 +8,7 @@
     <p>Criado em {{post.created_at}}</p>
     <p>Atualizado em {{post.updated_at}}</p>
 
-    <p style="overflow: hidden;">{{post.description|safe}}</p>
+    <p style="overflow: hidden;">{{post.description}}</p>
     <a href="/editpost/{{id}}" class="btn btn-sucess btn-outline-primary">Edit Post</a>
     <a href="/" class="btn btn-sucess btn-outline-secondary">Main page</a>
     <a href="/deletepost/{{id}}" class="btn btn-danger btn-outline-secondary">Delete this post</a>
