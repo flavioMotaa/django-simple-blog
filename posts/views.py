@@ -20,23 +20,3 @@ def writePost(request):
 def readPost(request, id):
     post = get_object_or_404(Post, pk=id)
     return render(request, 'posts/postwritten.html', {"post": post, "id": id})
-@login_required
-def editPost(request, id):
-    post = get_object_or_404(Post, pk=id)
-    form = WritePost(instance=post)
-
-    if request.method == "POST":
-        form = WritePost(request.POST, instance=post)
-
-        if(form.is_valid()):
-            post.save()
-            return redirect('/')
-        else:
-            return render(request, 'posts/editpost.html', {'form': form, 'post': post})
-    else:
-        return render(request, 'posts/editpost.html', {'form': form,'post': post})
-@login_required
-def deletePost(request, id):
-    post = get_object_or_404(Post, pk=id)
-    post.delete()
-    return redirect("/")
