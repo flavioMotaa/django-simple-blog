@@ -21,3 +21,5 @@
     <li>Then, <br><strong>python ./manage.py runserver</strong><br>
     Open your browser and type the port you received in the last command
 </ul>
+
+### Aplicação hospedada em https://monkeblogs.herokuapp.com
