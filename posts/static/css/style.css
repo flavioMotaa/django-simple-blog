@@ -1,17 +1,16 @@
 *{
     margin-left: 5px;
-    margin-right: 1px;
+    margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .container-fluid{
     text-align: justify;
-    background-color: lightgray;
+    background-color: rgb(235, 226, 226);
 }
 .author{
     text-align: center;
-    margin-top: 10px;
-    margin: 20px;
-    font-weight: bold;
-    color: lightgray;
+    margin-top: 12px;
+    margin: 15px;
+    color: rgb(238, 229, 229);
 }
